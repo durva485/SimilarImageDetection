@@ -13,7 +13,7 @@ export default function ImageUpload({ onResult }) {
     formData.append("image2", image2);
 
     setLoading(true);
-    const response = await fetch("http://127.0.0.1:5000/compare", {
+    const response = await fetch("https://similar-image-detection-backend.vercel.app/compare", {
       method: "POST",
       body: formData,
     });
